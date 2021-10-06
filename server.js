@@ -58,6 +58,6 @@ function initial() {
 
   Role.create({
     id: 3,
-    name: "user"
+    name: "salesman"
   });
 }
