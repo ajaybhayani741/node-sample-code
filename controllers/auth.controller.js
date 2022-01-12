@@ -1,6 +1,8 @@
-const { signUpUser } = require("../services/auth.service");
+const authService = require("../services/auth.service");
 
-exports.signup = signUpUser;
+exports.signUp = async (req, res) => {
+  return await authService.signUpUser(req, res, req.body);
+};
 
 exports.signIn = async (req, res) => {
   return await authService.signInUser(req, res, req.body);
